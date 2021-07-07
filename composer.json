@@ -1,0 +1,37 @@
+{
+    "name": "yd/xhprof",
+    "description": "YunDun xhprof",
+    "homepage": "http://www.yundun.com",
+    "keywords": ["php"],
+    "type": "library",
+    "authors": [
+        {
+            "name": "jasong",
+            "email": "gaolu@yundun.com",
+            "role": "Development"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.0"
+    },
+    "autoload": {
+        "files": [
+            "xhprof_lib/utils/xhprof_lib.php",
+            "xhprof_lib/utils/xhprof_runs.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "config": {
+        "process-timeout":      600,
+        "preferred-install":    "dist",
+        "github-protocols":     ["https"]
+    }
+}
